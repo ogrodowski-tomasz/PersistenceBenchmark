@@ -19,22 +19,22 @@ The project follows a clean, modular architecture with the following key compone
 
 ### Persistence Implementations
 
-1. **Core Data Manager** ([`CoreDataManager`](https://github.com/yourusername/PersistenceBenchmark/blob/main/PersistenceBenchmark/CoreData/CoreDataStack.swift))
+1. **Core Data Manager** ([`CoreDataManager`](https://github.com/ogrodowski-tomasz/PersistenceBenchmark/blob/main/PersistenceBenchmark/CoreData/CoreDataManager.swift))
    - Apple's object graph and persistence framework
    - Uses `NSPersistentContainer` and `NSManagedObjectContext`
    - Implements merge policies and batch operations
 
-2. **SQLite Manager** ([`SQLiteManager`](https://github.com/yourusername/PersistenceBenchmark/blob/main/PersistenceBenchmark/SQLite/SQLiteManager.swift))
+2. **SQLite Manager** ([`SQLiteManager`](https://github.com/ogrodowski-tomasz/PersistenceBenchmark/blob/main/PersistenceBenchmark/SQLite/SQLiteManager.swift))
    - Direct SQLite C API implementation
    - Uses prepared statements and transactions
    - Maximum performance with minimal overhead
 
-3. **Realm Manager** ([`RealmManager`](https://github.com/yourusername/PersistenceBenchmark/blob/main/PersistenceBenchmark/Realm/RealmManager.swift))
+3. **Realm Manager** ([`RealmManager`](https://github.com/ogrodowski-tomasz/PersistenceBenchmark/blob/main/PersistenceBenchmark/Realm/RealmManager.swift))
    - Modern object-oriented database
    - Zero-copy object access and automatic persistence
    - Thread-safe operations with context management
 
-4. **SwiftData Manager** ([`SwiftDataManager`](https://github.com/yourusername/PersistenceBenchmark/blob/main/PersistenceBenchmark/SwiftData/SwiftDataManager.swift))
+4. **SwiftData Manager** ([`SwiftDataManager`](https://github.com/ogrodowski-tomasz/PersistenceBenchmark/blob/main/PersistenceBenchmark/SwiftData/SwiftDataManager.swift))
    - Apple's latest Swift-first data framework
    - Type-safe operations with compile-time checks
    - Modern Swift syntax with `@Model` macro
