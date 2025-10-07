@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		24BCA6432E950F750075002D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 24BCA6422E950F750075002D /* RealmSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		24E727D32E93C81E00D8BA68 /* PersistenceBenchmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistenceBenchmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -14,17 +18,29 @@
 		24E727E52E93C81F00D8BA68 /* Exceptions for "PersistenceBenchmark" folder in "PersistenceBenchmark" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				BenchmarkModel.xcdatamodeld,
 				Info.plist,
 			);
 			target = 24E727D22E93C81E00D8BA68 /* PersistenceBenchmark */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		24BCA6322E93CB060075002D /* Exceptions for "PersistenceBenchmark" folder in "Copy Bundle Resources" phase from "PersistenceBenchmark" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 24E727D12E93C81E00D8BA68 /* Resources */;
+			membershipExceptions = (
+				BenchmarkModel.xcdatamodeld,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		24E727D52E93C81E00D8BA68 /* PersistenceBenchmark */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				24E727E52E93C81F00D8BA68 /* Exceptions for "PersistenceBenchmark" folder in "PersistenceBenchmark" target */,
+				24BCA6322E93CB060075002D /* Exceptions for "PersistenceBenchmark" folder in "Copy Bundle Resources" phase from "PersistenceBenchmark" target */,
 			);
 			path = PersistenceBenchmark;
 			sourceTree = "<group>";
@@ -36,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24BCA6432E950F750075002D /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +95,7 @@
 			);
 			name = PersistenceBenchmark;
 			packageProductDependencies = (
+				24BCA6422E950F750075002D /* RealmSwift */,
 			);
 			productName = PersistenceBenchmark;
 			productReference = 24E727D32E93C81E00D8BA68 /* PersistenceBenchmark.app */;
@@ -107,6 +125,9 @@
 			);
 			mainGroup = 24E727CA2E93C81E00D8BA68;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				24BCA6412E950F750075002D /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 24E727D42E93C81E00D8BA68 /* Products */;
 			projectDirPath = "";
@@ -149,7 +170,6 @@
 				INFOPLIST_FILE = PersistenceBenchmark/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -176,7 +196,6 @@
 				INFOPLIST_FILE = PersistenceBenchmark/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24BCA6412E950F750075002D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24BCA6422E950F750075002D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24BCA6412E950F750075002D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24E727CB2E93C81E00D8BA68 /* Project object */;
 }
